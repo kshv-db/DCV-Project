@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const pageVariants = {
@@ -14,11 +15,12 @@ const pageTransition = {
 export default function PageTransition({ children }) {
   return (
     <motion.div
+      variants={pageVariants}
       initial="initial"
       animate="animate"
       exit="exit"
-      variants={pageVariants}
       transition={pageTransition}
+      className="relative z-10"
     >
       {children}
     </motion.div>

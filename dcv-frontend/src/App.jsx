@@ -10,7 +10,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white">
+    <div className="min-h-screen bg-[#0A0A0A] text-white relative z-0">
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

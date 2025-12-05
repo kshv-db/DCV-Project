@@ -8,7 +8,7 @@ export default function LandingPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen bg-[#0A0A0A] flex items-center justify-center px-4 pt-16">
+      <div className="flex items-center justify-center px-4 py-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Heading with gradient text effect */}
           <Motion.h1
